@@ -16,6 +16,7 @@ themeButton.addEventListener("click", () => {
 
 });
 
+
 const contactForm = document.querySelector(".contact-form");
 
 contactForm.addEventListener("submit", (event) => {
@@ -25,5 +26,16 @@ contactForm.addEventListener("submit", (event) => {
     alert("Thanks for reaching out! I'll get back to you soon.");
 
     contactForm.reset();
+
+});
+
+
+const menuButton = document.querySelector("#menu-btn");
+
+const navLinks = document.querySelector(".nav-links");
+
+menuButton.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
 
 });
