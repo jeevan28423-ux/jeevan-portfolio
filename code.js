@@ -1,5 +1,38 @@
+// ================================
+// DARK MODE TOGGLE
+// ================================
+
 const themeButton = document.querySelector("#theme-btn");
 
 themeButton.addEventListener("click", () => {
+
     document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+
+        themeButton.textContent = "☀️ Light Mode";
+
+    } else {
+
+        themeButton.textContent = "🌙 Dark Mode";
+
+    }
+
+});
+
+
+// ================================
+// CONTACT FORM
+// ================================
+
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    alert("Thanks for reaching out! I'll get back to you soon.");
+
+    contactForm.reset();
+
 });

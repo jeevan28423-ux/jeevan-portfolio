@@ -1,55 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jeevan's portfolio</title>
+
+    <title>Jeevan's Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <nav class="navbar">
 
-    <h2 class="logo">Jeevan.A</h2>
+        <h2 class="logo">Jeevan.A</h2>
 
-    <button id="menu-btn">☰</button>
+        <button id="menu-btn">☰</button>
 
-    <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#skill">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-</nav>
-    <div class="hero">
-        <button id="theme-btn">🌙 Dark Mode</button>
-        <div class="profile">
-            <img src="image/WhatsApp Image 2026-10-02 at 6.27.46 PM.jpeg" alt="my photo">
-        </div>
-    </div>
-        <div class="name">
-            <div><h1>I'M JEEVAN.A </h1></div>
-            <div><h2>A Full Stack Developer</h2></div>
-        </div>
-            <div class="intro">
-            <p>
-                I’m a BCA student and aspiring Full Stack Developer with
-                a strong interest in building modern and user-friendly
-                web applications. I enjoy turning ideas into functional
-                websites while continuously improving my skills in HTML,
-                CSS, JavaScript, and modern web technologies.
-            </p>
-        </div>
-        <div id="skill"><h1>Skills</h1></div>
-        <div class="skills">
-        <div class="mango"><img src="image/images.png" alt="mango-db"></div>
-        <div class="css"><img src="image/732190.png" alt="css"></div>
-        <div class="react"><img src="image/934883.png" alt="react"></div>
-        <div class="html"><img src="image/174854.png" alt="html"></div>
-        <div class="next-js"><img src="image/nextjs.jpg" alt=""></div>
-    </div>
-    </div>
+    </nav>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-image">
+
+                <div class="profile">
+                    <img
+                        src="image/WhatsApp Image 2026-10-02 at 6.27.46 PM.jpeg"
+                        alt="Jeevan's profile photo"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="hero-content">
+
+                <p class="greeting">HELLO, I'M</p>
+
+                <h1>JEEVAN.A</h1>
+
+                <h2 class="role">
+                    A Full Stack Developer
+                </h2>
+
+                <div class="headline">
+
+                    <span>LET'S TURN IDEAS</span>
+
+                    <strong>INTO REALITY.</strong>
+
+                </div>
+
+                <p class="intro">
+                    I’m a BCA student and aspiring Full Stack Developer
+                    with a strong interest in building modern and
+                    user-friendly web applications. I enjoy turning
+                    ideas into functional websites while continuously
+                    improving my skills in HTML, CSS, JavaScript,
+                    and modern web technologies.
+                </p>
+
+            </div>
+
+
+            <button id="theme-btn">🌙 Dark Mode</button>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about">
+
+            <div class="section-heading">
+                <p>GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+
+                <p>
+                    I'm a BCA student passionate about web development
+                    and building useful digital experiences. I enjoy
+                    learning how websites work from the front end to
+                    the back end and improving my skills by creating
+                    real projects.
+                </p>
+
+                <p>
+                    My current focus is becoming a Full Stack Developer
+                    by strengthening my JavaScript skills and learning
+                    modern web technologies.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skill">
+
+            <div class="section-heading">
+                <p>WHAT I WORK WITH</p>
+                <h2>Skills</h2>
+            </div>
+
+
+            <div class="skills">
+
+                <div class="skill-card">
+                    <img src="image/images.png" alt="MongoDB">
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/732190.png" alt="CSS">
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/934883.png" alt="React">
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/174854.png" alt="HTML">
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/nextjs.jpg" alt="Next.js">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="projects">
+
+            <div class="section-heading">
+                <p>MY WORK</p>
+                <h2>Projects</h2>
+            </div>
+
+
+            <div class="project-grid">
+
+                <div class="project-card">
+
+                    <div class="project-content">
+
+                        <p class="project-number">01</p>
+
+                        <h3>Weather Broadcast</h3>
+
+                        <p>
+                            A weather application built using
+                            HTML, CSS and JavaScript that fetches
+                            real-time weather information from an API.
+                        </p>
+
+                        <div class="project-tech">
+                            HTML · CSS · JavaScript · API
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-content">
+
+                        <p class="project-number">02</p>
+
+                        <h3>Car Website</h3>
+
+                        <p>
+                            A responsive car website designed with
+                            a clean layout and modern user interface.
+                        </p>
+
+                        <div class="project-tech">
+                            HTML · CSS
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-content">
+
+                        <p class="project-number">03</p>
+
+                        <h3>More Coming Soon</h3>
+
+                        <p>
+                            Currently working on new projects while
+                            learning full stack development.
+                        </p>
+
+                        <div class="project-tech">
+                            In Progress
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact">
+
+            <div class="section-heading">
+                <p>GET IN TOUCH</p>
+                <h2>Let's Work Together</h2>
+            </div>
+
+
+            <div class="contact-container">
+
+                <div class="contact-text">
+
+                    <h3>Have an idea?</h3>
+
+                    <p>
+                        Whether you want to discuss a project,
+                        collaborate on something interesting,
+                        or simply say hello, feel free to reach out.
+                    </p>
+
+                    <p class="contact-email">
+                        Let's build something meaningful.
+                    </p>
+
+                </div>
+
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell me about your idea..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        Send Message →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Jeevan.A. Built with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+
     <script src="code.js"></script>
+
 </body>
+
+</html>
