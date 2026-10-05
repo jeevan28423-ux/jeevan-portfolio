@@ -1,7 +1,3 @@
-// ================================
-// DARK MODE TOGGLE
-// ================================
-
 const themeButton = document.querySelector("#theme-btn");
 
 themeButton.addEventListener("click", () => {
@@ -19,11 +15,6 @@ themeButton.addEventListener("click", () => {
     }
 
 });
-
-
-// ================================
-// CONTACT FORM
-// ================================
 
 const contactForm = document.querySelector(".contact-form");
 
