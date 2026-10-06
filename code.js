@@ -39,3 +39,8 @@ menuButton.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
 });
+const skillsEffect = document.querySelector(".skills-effect");
+
+skillsEffect.addEventListener("click", () => {
+    skillsEffect.classList.toggle("active");
+});

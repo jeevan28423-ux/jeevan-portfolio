@@ -12,12 +12,17 @@
 
 <body>
 
-
     <nav class="navbar">
 
         <h2 class="logo">Jeevan.A</h2>
 
-        <button id="menu-btn">☰</button>
+        <input type="checkbox" id="checkbox">
+
+        <label for="checkbox" class="toggle" id="menu-btn">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
 
         <div class="nav-links">
             <a href="#">Home</a>
@@ -29,9 +34,7 @@
 
     </nav>
 
-
     <main>
-
 
         <section class="hero">
 
@@ -46,7 +49,6 @@
 
             </div>
 
-
             <div class="hero-content">
 
                 <p class="greeting">HELLO, I'M</p>
@@ -58,11 +60,8 @@
                 </h2>
 
                 <div class="headline">
-
                     <span>LET'S TURN IDEAS</span>
-
                     <strong>INTO REALITY.</strong>
-
                 </div>
 
                 <p class="intro">
@@ -76,11 +75,9 @@
 
             </div>
 
-
             <button id="theme-btn">🌙 Dark Mode</button>
 
         </section>
-
 
         <section id="about" class="about">
 
@@ -109,8 +106,6 @@
 
         </section>
 
-
-
         <section id="skill">
 
             <div class="section-heading">
@@ -118,35 +113,46 @@
                 <h2>Skills</h2>
             </div>
 
+            <div class="skills-effect">
 
-            <div class="skills">
+                <div class="skills-back"></div>
 
-                <div class="skill-card">
-                    <img src="image/images.png" alt="MongoDB">
+                <div class="skill-grid">
+
+                    <div class="skill-card">
+                        <img src="image/174854.png" alt="HTML">
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="image/732190.png" alt="CSS">
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="image/11448a7a96ee808a3cdbaf0df9570976.webp" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="image/934883.png" alt="React">
+                        <span>React</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="image/images.png" alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+
                 </div>
 
-                <div class="skill-card">
-                    <img src="image/732190.png" alt="CSS">
-                </div>
-
-                <div class="skill-card">
-                    <img src="image/934883.png" alt="React">
-                </div>
-
-                <div class="skill-card">
-                    <img src="image/174854.png" alt="HTML">
-                </div>
-
-                <div class="skill-card">
-                    <img src="image/nextjs.jpg" alt="Next.js">
+                <div class="skills-text">
+                    HOVER TO EXPLORE
                 </div>
 
             </div>
 
         </section>
-
-
-
 
         <section id="projects" class="projects">
 
@@ -154,7 +160,6 @@
                 <p>MY WORK</p>
                 <h2>Projects</h2>
             </div>
-
 
             <div class="project-grid">
 
@@ -180,7 +185,6 @@
 
                 </div>
 
-
                 <div class="project-card">
 
                     <div class="project-content">
@@ -201,7 +205,6 @@
                     </div>
 
                 </div>
-
 
                 <div class="project-card">
 
@@ -228,15 +231,12 @@
 
         </section>
 
-
-
         <section id="contact" class="contact">
 
             <div class="section-heading">
                 <p>GET IN TOUCH</p>
                 <h2>Let's Work Together</h2>
             </div>
-
 
             <div class="contact-container">
 
@@ -256,7 +256,6 @@
 
                 </div>
 
-
                 <form class="contact-form">
 
                     <div class="form-group">
@@ -275,7 +274,6 @@
 
                     </div>
 
-
                     <div class="form-group">
 
                         <label for="email">
@@ -291,7 +289,6 @@
                         >
 
                     </div>
-
 
                     <div class="form-group">
 
@@ -309,7 +306,6 @@
 
                     </div>
 
-
                     <button
                         type="submit"
                         class="submit-btn"
@@ -325,9 +321,6 @@
 
     </main>
 
-
-
-
     <footer>
 
         <p>
@@ -335,7 +328,6 @@
         </p>
 
     </footer>
-
 
     <script src="code.js"></script>
 
