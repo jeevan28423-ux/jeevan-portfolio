@@ -1,0 +1,86 @@
+
+.swap-card {
+  width: 100%;
+  max-width: 500px;
+  min-height: 256px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ebe9e3;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.swap-card-label {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.swap-card-content {
+  position: relative;
+  min-height: 85px;
+}
+
+.swap-card-initial,
+.swap-card-final {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.swap-card-initial {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.swap-card-final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 85%;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted);
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.swap-card:hover .swap-card-initial {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.swap-card:hover .swap-card-final {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .swap-card {
+    min-height: 200px;
+  }
+
+  .swap-card-final {
+    position: static;
+    opacity: 1;
+    transform: none;
+    margin-top: 12px;
+  }
+}
+
+/* Swap Text Card - Text Visibility Fix */
+
+.swap-card {
+  color: #29231f;
+}
+
+.swap-card-initial,
+.swap-card-final {
+  color: #29231f;
+}
+
+.swap-card-label {
+  color: #8b8178;
+}

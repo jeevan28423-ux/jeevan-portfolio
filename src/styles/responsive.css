@@ -1,0 +1,40 @@
+
+/* Hero responsive layout */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    padding: 65px 7%;
+    gap: 45px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(38px, 9vw, 48px);
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 420px;
+    justify-self: center;
+  }
+
+  .hero-image img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  .hero-image img {
+    height: 390px;
+  }
+}

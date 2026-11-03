@@ -1,0 +1,72 @@
+
+.background-beams {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.beam-glow {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 60%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(199, 107, 59, 0.055),
+    transparent 70%
+  );
+}
+
+.beam-lane {
+  position: relative;
+  flex: 0 0 40px;
+  height: 100%;
+  width: 1px;
+  transform: rotate(12deg);
+  background: rgba(199, 107, 59, 0.045);
+}
+
+.ab-beam {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+}
+
+.ab-beam-trail {
+  width: 100%;
+  height: var(--length);
+  clip-path: polygon(50% 0, 65% 100%, 35% 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(199, 107, 59, 0.05),
+    rgba(199, 107, 59, 0.65),
+    rgba(199, 107, 59, 0.05)
+  );
+}
+
+@keyframes meteor {
+  0% {
+    transform: translateX(-50%) translateY(-20%);
+    opacity: 0;
+  }
+  12%, 88% {
+    opacity: var(--opacity);
+  }
+  100% {
+    transform: translateX(-50%) translateY(300%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ab-beam {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}

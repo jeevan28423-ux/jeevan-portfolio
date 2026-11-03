@@ -1,0 +1,117 @@
+
+.btn-53,
+.btn-53 *,
+.btn-53::before,
+.btn-53::after {
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 14px 30px;
+  border: 1px solid var(--foreground);
+  border-radius: 999px;
+  background: var(--foreground);
+  color: var(--background);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-53:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-53 .original {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  background: var(--foreground);
+  color: var(--background);
+  transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+  color: var(--background);
+}
+
+.btn-53 .letters span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition:
+    transform 0.25s cubic-bezier(0.87, 0, 0.13, 1),
+    opacity 0.25s ease;
+}
+
+.btn-53 .letters span:nth-child(even) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover:not(:disabled) .original {
+  transform: translateY(100%);
+}
+
+.btn-53:hover:not(:disabled) .letters span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(2) {
+  transition-delay: 0.05s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(3) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(4) {
+  transition-delay: 0.15s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(5) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(6) {
+  transition-delay: 0.25s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(7) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(8) {
+  transition-delay: 0.35s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(9) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover:not(:disabled) .letters span:nth-child(10) {
+  transition-delay: 0.45s;
+}
+
+.btn-53:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-53,
+  .btn-53 * {
+    transition: none !important;
+  }
+}

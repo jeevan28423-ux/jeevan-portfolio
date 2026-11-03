@@ -1,0 +1,163 @@
+
+/* ABOUT SECTION */
+
+.about {
+  padding: 120px 8%;
+  border-top: 1px solid var(--border);
+}
+
+/* ABOUT HEADING */
+
+.about-heading {
+  width: 100%;
+}
+
+.about-label {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.about-heading h2 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.15;
+  letter-spacing: -2.5px;
+  color: var(--foreground);
+}
+
+.about-heading h2 span {
+  color: var(--muted);
+}
+
+/* TWO COLUMN LAYOUT */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  column-gap: 65px;
+  margin-top: 65px;
+  width: 100%;
+}
+
+/* TERMINAL - LEFT SIDE */
+
+.about-visual {
+  width: 100%;
+  min-width: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.about-visual .terminal-window {
+  width: 100%;
+  max-width: 520px;
+  margin: 0;
+}
+
+/* INTRODUCTION - RIGHT SIDE */
+
+.about-content {
+  width: 100%;
+  min-width: 0;
+  max-width: 620px;
+  margin: 0;
+  padding: 0;
+  align-self: start;
+}
+
+.about-content > p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 0 0 22px;
+}
+
+/* CURRENT FOCUS */
+
+.about-focus {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 35px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.focus-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.about-focus p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--foreground);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    margin-top: 45px;
+  }
+
+  .about-visual .terminal-window {
+    max-width: 520px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 7%;
+  }
+
+  .about-heading h2 {
+    font-size: clamp(36px, 9vw, 48px);
+    letter-spacing: -1.5px;
+  }
+
+  .about-layout {
+    row-gap: 35px;
+    margin-top: 35px;
+  }
+
+  .about-content > p {
+    font-size: 15px;
+  }
+
+  .about-focus {
+    margin-top: 25px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .about {
+    padding: 65px 6%;
+  }
+
+  .about-label {
+    margin-bottom: 18px;
+  }
+
+  .about-heading h2 {
+    font-size: 35px;
+  }
+}
+ 

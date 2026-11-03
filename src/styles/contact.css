@@ -1,0 +1,270 @@
+
+/* ================================
+   Contact Section
+================================ */
+
+.contact {
+  padding: 120px 8%;
+  border-top: 1px solid var(--border);
+}
+
+/* Heading */
+
+.contact-heading {
+  margin-bottom: 70px;
+}
+
+.contact-label {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.contact-heading h2 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.15;
+  letter-spacing: -2.5px;
+  color: var(--foreground);
+}
+
+.contact-heading h2 span {
+  color: var(--muted);
+}
+
+/* Layout */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Contact Information */
+
+.contact-info h3 {
+  font-size: 27px;
+  color: var(--foreground);
+  margin-bottom: 18px;
+}
+
+.contact-info > p {
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+/* Contact Links */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-details a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: 14px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: var(--accent);
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Availability */
+
+.contact-availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 45px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #36b978;
+  box-shadow: 0 0 10px #36b97880;
+}
+
+/* Contact Form with BorderBeam */
+
+.contact-form {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 30px;
+
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+
+/* Moving BorderBeam */
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 290deg,
+    var(--accent) 325deg,
+    #ffffff 345deg,
+    transparent 360deg
+  );
+
+  animation: border-beam-rotate 8s linear infinite;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Inner card background */
+
+.contact-form::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+
+  background: var(--card, var(--surface));
+  border-radius: 15px;
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes border-beam-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form Inputs */
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 15px;
+
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+
+  color: var(--foreground);
+  font: inherit;
+  font-size: 14px;
+
+  outline: none;
+  resize: vertical;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+
+  box-shadow:
+    0 0 0 3px color-mix(
+      in srgb,
+      var(--accent) 15%,
+      transparent
+    );
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+/* Animated Send Message Button */
+
+.contact-form .contact-submit {
+  width: 100%;
+  padding: 15px 22px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-info > p {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 7%;
+  }
+
+  .contact-heading {
+    margin-bottom: 45px;
+  }
+
+  .contact-heading h2 {
+    font-size: clamp(36px, 9vw, 48px);
+    letter-spacing: -1.5px;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 65px 6%;
+  }
+
+  .contact-heading h2 {
+    font-size: 35px;
+  }
+}
